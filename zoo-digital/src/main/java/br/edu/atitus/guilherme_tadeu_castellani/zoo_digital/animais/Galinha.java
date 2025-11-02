@@ -7,7 +7,7 @@ import br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.comportamentos.Preda
 public class Galinha extends Ave implements Voador, Corredor, Predador{
 
 	public Galinha(String nome, int idade, String corPenas) {
-		super(nome, idade, corPenas);
+		super(nome, "Galinha", idade, corPenas);
 		
 	}
 

@@ -5,8 +5,8 @@ import br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.comportamentos.Preda
 
 public class PeixeMorcego extends Peixe implements Predador{
 
-    public PeixeMorcego(String nome, int idade) {
-        super(nome, idade, "Salgada");
+    public PeixeMorcego(String nome, int idade, String tipoAgua) {
+        super(nome, "Peixe-Morcego", idade, "Salgada");
     }
 
     @Override

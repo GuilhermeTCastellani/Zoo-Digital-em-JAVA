@@ -6,7 +6,7 @@ import br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.comportamentos.Preda
 public class Pinguim extends Ave implements Nadador, Predador {
 
     public Pinguim(String nome, int idade, String corPenas) {
-        super(nome, idade, corPenas);
+        super(nome, "Pinguim", idade, corPenas);
     }
 
     @Override

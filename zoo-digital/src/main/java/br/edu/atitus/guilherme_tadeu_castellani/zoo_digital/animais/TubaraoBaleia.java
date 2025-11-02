@@ -5,7 +5,7 @@ import br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.comportamentos.Nadad
 public class TubaraoBaleia extends Peixe implements Nadador{
 
 	public TubaraoBaleia(String nome, int idade, String tipoAgua) {
-		super(nome, idade, "Salgada");
+		super(nome, "Tubarão-Baleia", idade, "Salgada");
 	}
 
 	@Override

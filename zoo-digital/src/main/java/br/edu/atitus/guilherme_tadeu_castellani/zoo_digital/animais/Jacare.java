@@ -7,37 +7,37 @@ import br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.comportamentos.Preda
 public class Jacare extends Reptil implements Nadador, Corredor, Predador{
 
 	public Jacare(String nome,int idade, boolean temSangueFrio) {
-		super(nome, "jacaré", idade, temSangueFrio);
+		super(nome, "Jacaré", idade, temSangueFrio);
 	}
 	
 
 	@Override
 	public void cacar() {
-		System.out.println("Está caçando uma capivara");
+		System.out.println(getNome() + " está caçando uma capivara");
 		
 	}
 
 	@Override
 	public void correr() {
-		System.out.println("Está Trotando");
+		System.out.println(getNome() + " está Trotando");
 		
 	}
 
 	@Override
 	public void nadar() {
-		System.out.println("Está Nadando em direção sua presa");
+		System.out.println(getNome() + " está Nadando em direção sua presa");
 		
 	}
 
 	@Override
 	public void emitirSom() {
-		System.out.println("O Jacare esta rosnando");
+		System.out.println(getNome() + " está rosnando");
 		
 	}
 
 	@Override
 	public void comer() {
-		System.out.println("O jacare esta se alimentando de uma carcaça");
+		System.out.println(getNome() + " está se alimentando de uma carcaça");
 		
 	}
 

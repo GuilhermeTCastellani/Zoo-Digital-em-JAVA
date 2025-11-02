@@ -9,7 +9,7 @@ public class Leao extends Mamifero implements Corredor, Nadador, Predador{
 	private String corJuba;
 	
 	public Leao(String nome, int idade, String corJuba) {
-		super(nome, idade, true);
+		super(nome, "Leão/oa", idade, true);
 		this.corJuba = corJuba;
 		
 	}
@@ -41,8 +41,9 @@ public class Leao extends Mamifero implements Corredor, Nadador, Predador{
 	@Override
 	public void comer() {
 		System.out.println(getNome() + " está cpmendo um bife");
-		
+
 	}
+
 	public String getCorJuba() {
 		return corJuba;
 	}

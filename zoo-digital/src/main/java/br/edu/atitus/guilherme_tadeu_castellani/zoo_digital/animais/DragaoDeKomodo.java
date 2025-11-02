@@ -6,8 +6,8 @@ import br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.comportamentos.Nadad
 
 public class DragaoDeKomodo extends Reptil implements Corredor, Predador, Nadador{
 
-	public DragaoDeKomodo(String nome, String especie, int idade, boolean temSangueFrio) {
-		super(nome, especie, idade, true);
+	public DragaoDeKomodo(String nome, int idade, boolean temSangueFrio) {
+		super(nome, "Dragão-de-Komodo", idade, true);
 	}
 
 	@Override

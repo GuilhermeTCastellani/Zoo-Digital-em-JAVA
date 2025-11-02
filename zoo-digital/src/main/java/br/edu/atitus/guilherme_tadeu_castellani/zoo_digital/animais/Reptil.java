@@ -4,8 +4,9 @@ public abstract class Reptil extends Animal {
 	private boolean temSangueFrio;
 
 	public Reptil(String nome, String especie, int idade, boolean temSangueFrio) {
-		super(nome, "Reptil", idade);
-		this.setTemSangueFrio(temSangueFrio);
+		super(nome, especie, idade);
+		this.temSangueFrio = temSangueFrio;
+		lagartear();
 	}
 
 	public boolean isTemSangueFrio() {
@@ -14,6 +15,11 @@ public abstract class Reptil extends Animal {
 
 	public void setTemSangueFrio(boolean temSangueFrio) {
 		this.temSangueFrio = temSangueFrio;
+	}
+
+	// Getter adicional no estilo 'get' para compatibilidade
+	public boolean getTemSangueFrio() {
+		return this.temSangueFrio;
 	}
 
 	public void lagartear() {

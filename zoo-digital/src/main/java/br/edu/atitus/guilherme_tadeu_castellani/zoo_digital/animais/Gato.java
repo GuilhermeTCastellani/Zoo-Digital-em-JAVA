@@ -6,7 +6,7 @@ import br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.comportamentos.Preda
 public class Gato extends Mamifero implements Corredor, Predador{
 
 	public Gato(String nome, int idade, boolean temPelo) {
-		super(nome, idade, true);
+		super(nome, "Gato", idade, true);
 	}
 
 	@Override

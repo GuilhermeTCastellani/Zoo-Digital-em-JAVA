@@ -6,7 +6,7 @@ import br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.comportamentos.Preda
 public class Golfinho extends Mamifero implements Nadador, Predador{
 
     public Golfinho(String nome, int idade) {
-        super(nome, idade, false);
+        super(nome, "Golfinho", idade, false);
     }
 
     @Override

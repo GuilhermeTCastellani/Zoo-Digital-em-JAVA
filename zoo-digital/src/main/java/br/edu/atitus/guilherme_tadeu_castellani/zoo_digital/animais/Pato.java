@@ -5,7 +5,7 @@ import br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.comportamentos.*;
 public class Pato extends Ave implements Voador, Nadador, Corredor, Predador{
 
     public Pato(String nome, int idade, String corPenas) {
-        super(nome, idade, corPenas);
+        super(nome, "Pato", idade, corPenas);
     }
 
     @Override
@@ -35,7 +35,7 @@ public class Pato extends Ave implements Voador, Nadador, Corredor, Predador{
 
 	@Override
 	public void cacar() {
-		System.out.println(getNome() + "Esta caçando insetos");
+		System.out.println(getNome() + " está caçando insetos");
 		
 		
 	}

@@ -6,7 +6,7 @@ import br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.comportamentos.Preda
 public class Traira extends Peixe implements Nadador, Predador{
 
     public Traira(String nome, int idade) {
-        super(nome, idade, "Doce");
+        super(nome, "Traíra", idade, "Doce");
     }
 
     @Override

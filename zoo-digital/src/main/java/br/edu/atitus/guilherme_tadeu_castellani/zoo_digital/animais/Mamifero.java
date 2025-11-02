@@ -3,8 +3,8 @@ package br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.animais;
 public abstract class Mamifero extends Animal {
     private boolean temPelo;
 
-    public Mamifero(String nome, int idade, boolean temPelo) {
-        super(nome, "Mamífero", idade);
+    public Mamifero(String nome, String especie, int idade, boolean temPelo) {
+        super(nome, especie, idade);
         this.temPelo = temPelo;
     }
 

@@ -6,7 +6,7 @@ import br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.comportamentos.Preda
 public class Gaviao extends Ave implements Voador, Predador{
 
 	public Gaviao(String nome, int idade, String corPenas) {
-		super(nome, idade, corPenas);
+		super(nome, "Gavião", idade, corPenas);
 	}
 
 	@Override

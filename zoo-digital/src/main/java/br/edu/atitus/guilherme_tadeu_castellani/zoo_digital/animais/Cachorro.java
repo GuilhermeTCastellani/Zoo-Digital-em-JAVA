@@ -9,7 +9,7 @@ public class Cachorro extends Mamifero implements Nadador,Corredor, Predador{
     private String raca;
 
     public Cachorro(String nome, int idade, String raca) {
-        super(nome, idade, true);
+        super(nome, "Cachorro", idade, true);
         this.raca = raca;
     }
 
@@ -42,7 +42,7 @@ public class Cachorro extends Mamifero implements Nadador,Corredor, Predador{
 
 	@Override
 	public void cacar() {
-		System.out.println(getNome() + "está caçando uma mosca");
+		System.out.println(getNome() + " está caçando uma mosca");
 		
 	}
     
