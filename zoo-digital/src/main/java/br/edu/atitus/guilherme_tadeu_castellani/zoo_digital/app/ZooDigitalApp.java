@@ -106,68 +106,67 @@ public class ZooDigitalApp {
         Animal novo = null;
         try {
             switch (tipo) {
-                case "1": // Cachorro(nome, idade, raca)
+                case "1":
                     System.out.print("Raça: ");
                     String raca = scanner.nextLine();
                     novo = new Cachorro(nome, idade, raca);
                     break;
-                case "2": // Gato(nome, idade, temPelo) - constructor ignores temPelo param but keep
-                          // prompt
+                case "2":
                     novo = new Gato(nome, idade, true);
                     break;
-                case "3": // Leao(nome, idade, corJuba)
+                case "3":
                     System.out.print("Cor da juba: ");
                     String corJuba = scanner.nextLine();
                     novo = new Leao(nome, idade, corJuba);
                     break;
-                case "4": // Pato(nome, idade, corPenas)
+                case "4": 
                     System.out.print("Cor das penas: ");
                     String corPato = scanner.nextLine();
                     novo = new Pato(nome, idade, corPato);
                     break;
-                case "5": // Golfinho(nome, idade)
+                case "5":
                     novo = new Golfinho(nome, idade);
                     break;
-                case "6": // Traira(nome, idade)
+                case "6":
                     novo = new Traira(nome, idade);
                     break;
-                case "7": // Jacare(nome, idade, temSangueFrio)
+                case "7":
                     novo = new Jacare(nome, idade, true);
                     break;
-                case "8": // Salmao(nome, idade, tipoAgua)
+                case "8": 
                     novo = new Salmao(nome, idade, "anádromo");
                     break;
-                case "9": // Pinguim(nome, idade, corPenas)
+                case "9":
                     System.out.print("Cor das penas: ");
                     String corPinguim = scanner.nextLine();
                     novo = new Pinguim(nome, idade, corPinguim);
                     break;
-                case "10": // Gaviao(nome, idade, corPenas)
+                case "10":
                     System.out.print("Cor das penas: ");
                     String corGaviao = scanner.nextLine();
                     novo = new Gaviao(nome, idade, corGaviao);
                     break;
-                case "11": // Galinha(nome, idade, corPenas)
+                case "11":
                     System.out.print("Cor das penas: ");
                     String corGalinha = scanner.nextLine();
                     novo = new Galinha(nome, idade, corGalinha);
                     break;
-                case "12": // TubaraoBaleia(nome, idade, tipoAgua)
+                case "12":
                     novo = new TubaraoBaleia(nome, idade, "salgada");
                     break;
-                case "13": // PeixeMorcego(nome, idade,
+                case "13":
                     novo = new PeixeMorcego(nome, idade, "salgada");
                     break;
-                case "14": // DragaoDeKomodo(nome, especie, idade, temSangueFrio)
+                case "14":
                     novo = new DragaoDeKomodo(nome, idade, true);
                     break;
-                case "15": // Cobra(nome, especie, idade, temSangueFrio)
+                case "15":
                     novo = new Cobra(nome, idade, true);
                     break;
-                case "16": // Lagarto(nome, idade, temSangueFrio)
+                case "16":
                     novo = new Lagarto(nome, idade, true);
                     break;
-                case "0": // fazer funcionar o cancelar cadastro
+                case "0":
                     System.out.println("Cadastro cancelado.");
                     return;
                 default:
@@ -263,27 +262,27 @@ public class ZooDigitalApp {
     }
     private static String extraInfo(Animal a) {
         StringBuilder sb = new StringBuilder();
-        // Peixe -> tipoAgua
+        
         if (a instanceof br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.animais.Peixe) {
             br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.animais.Peixe p = (br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.animais.Peixe) a;
             sb.append(" | Tipo de Água: ").append(p.getTipoAgua());
         }
-        // Ave -> corPenas
+       
         if (a instanceof br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.animais.Ave) {
             br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.animais.Ave av = (br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.animais.Ave) a;
             sb.append(" | Cor das penas: ").append(av.getCorPenas());
         }
-        // Reptil -> temSangueFrio
+        
         if (a instanceof br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.animais.Reptil) {
             br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.animais.Reptil r = (br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.animais.Reptil) a;
             sb.append(" | Tem sangue frio: ").append(r.getTemSangueFrio());
         }
-        // Leao -> corJuba
+       
         if (a instanceof br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.animais.Leao) {
             br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.animais.Leao l = (br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.animais.Leao) a;
             sb.append(" | Cor da juba: ").append(l.getCorJuba());
         }
-        // Cachorro -> raca
+      
         if (a instanceof br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.animais.Cachorro) {
             br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.animais.Cachorro c = (br.edu.atitus.guilherme_tadeu_castellani.zoo_digital.animais.Cachorro) a;
             sb.append(" | Raça: ").append(c.getRaca());
